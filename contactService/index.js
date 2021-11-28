@@ -67,6 +67,7 @@ export default class {
 		}
 	}
 
+	//Assuming field is a field that is within the baseProps model
 	updateContact(id, field, value) {
 		let index;
 		let contact;
@@ -106,6 +107,7 @@ export default class {
 	}
 
 	//Checks phone number type and formats it to expected format
+	//Assuming that phone numbers will only come in one of the two formats
 	formatPhoneNumber(phoneNumbers) {
 		let numbers = [];
 		let numCheck = /-/g;
